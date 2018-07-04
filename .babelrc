@@ -1,0 +1,10 @@
+{
+  "presets": [
+    "env",
+    "react"
+    
+  ],
+  "plugins": [
+    "./lib/babel-plugin-styler"
+  ]
+}

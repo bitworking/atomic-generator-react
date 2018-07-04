@@ -1,0 +1,11 @@
+{
+  "name": "styler",
+  "version": "1.0.0",
+  "description": "HOC that creates class names and extracts CSS into a static file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests\" && exit 1"
+  },
+  "author": "Jan Fischer <info@bitworking.de> (http://www.bitworking.de)",
+  "license": "ISC"
+}
