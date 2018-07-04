@@ -30,6 +30,24 @@ module.exports = [
               }
             }
           ]
+        },
+        {
+          test: /\.scss$/,
+  	      use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].css',
+                outputPath: 'assets/css/'
+              }
+            },
+            {
+							loader: 'postcss-loader'
+						},
+            {
+							loader: 'sass-loader'
+						}
+          ]
         }
       ]
     },
@@ -40,6 +58,5 @@ module.exports = [
         filename: './index.html'
       })
     ]
-  
   }
 ];
