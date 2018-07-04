@@ -5,11 +5,18 @@ import reactHexagon from './assets/react-hexagon.png';
 
 import Heading from './components/atomic/atoms/Heading/Heading';
 
+const Paragraph = styled.p`
+  color: red;
+`;
+
 const Container = styled.div`
   background: #333;
   font-size: 16px;
   ${Heading} {
     font-size: 24px;
+  }
+  ${Paragraph} {
+    color: blue;
   }
 `;
 
