@@ -6,7 +6,7 @@
   ],
   "plugins": [
     ["./lib/babel-plugin-styler", {
-      "cssPath": "./styler.scss"
+      "cssPath": "./styler.less"
     }]
   ]
 }
