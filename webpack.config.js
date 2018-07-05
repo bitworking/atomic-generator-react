@@ -33,6 +33,9 @@ module.exports = [
         },
         {
           test: /\.scss$/,
+          include: [
+            path.resolve(__dirname, 'dist/assets/scss')
+          ],
   	      use: [
             {
               loader: 'file-loader',
