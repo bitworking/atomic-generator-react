@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from '../lib/styler';
 import reactHexagon from './assets/react-hexagon.png';
-
 import Heading from './components/atomic/atoms/Heading/Heading';
 
 const Paragraph = styled.p`
@@ -23,6 +22,7 @@ const Container = styled.div`
 const Index = () => {
   return (
     <React.Fragment>
+      <Paragraph>Was geht?</Paragraph>
       <div children={'Outside Container.'} />
       <div><h2>Inside Container.</h2>Hello React! <img src={reactHexagon} /></div>
     </React.Fragment>
