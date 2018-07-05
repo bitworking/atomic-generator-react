@@ -5,6 +5,7 @@ const nodeExternals = require('webpack-node-externals');
 
 module.exports = [
   {
+    mode: 'development',
     entry: './src/index.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
@@ -33,9 +34,6 @@ module.exports = [
         },
         {
           test: /\.scss$/,
-          include: [
-            path.resolve(__dirname, 'dist/assets/scss')
-          ],
   	      use: [
             {
               loader: 'file-loader',

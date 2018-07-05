@@ -3,13 +3,10 @@ import ReactDOM from 'react-dom';
 import styled from '../lib/styler';
 import reactHexagon from './assets/react-hexagon.png';
 import Heading from './components/atomic/atoms/Heading/Heading';
-
-const Paragraph = styled.p`
-  color: red;
-`;
+import Paragraph from './components/atomic/atoms/Paragraph/Paragraph';
 
 const Container = styled.div`
-  background: #ddd;
+  background: #eee;
   font-size: 16px;
   ${Heading} {
     font-size: 24px;
