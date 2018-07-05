@@ -9,7 +9,7 @@ const Paragraph = styled.p`
 `;
 
 const Container = styled.div`
-  background: #333;
+  background: #ddd;
   font-size: 16px;
   ${Heading} {
     font-size: 24px;
@@ -22,9 +22,13 @@ const Container = styled.div`
 const Index = () => {
   return (
     <React.Fragment>
+      <Heading>Aiiight</Heading>
       <Paragraph>Was geht?</Paragraph>
-      <div children={'Outside Container.'} />
-      <div><h2>Inside Container.</h2>Hello React! <img src={reactHexagon} /></div>
+      <Container>
+        <Heading>Und jetzt?</Heading>
+        <Paragraph>Aiiiiight</Paragraph>
+      </Container>
+      <div><img src={reactHexagon} width="50" height="50" /></div>
     </React.Fragment>
   );
 };
