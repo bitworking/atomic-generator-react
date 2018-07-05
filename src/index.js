@@ -4,27 +4,14 @@ import styled from '../lib/styler';
 import reactHexagon from './assets/react-hexagon.png';
 import Heading from './components/atomic/atoms/Heading/Heading';
 import Paragraph from './components/atomic/atoms/Paragraph/Paragraph';
-
-const Container = styled.div`
-  background: #eee;
-  font-size: 16px;
-  ${Heading} {
-    font-size: 24px;
-  }
-  ${Paragraph} {
-    color: blue;
-  }
-`;
+import Block from './components/atomic/molecules/Block/Block';
 
 const Index = () => {
   return (
     <React.Fragment>
       <Heading>Aiiight</Heading>
       <Paragraph>Was geht?</Paragraph>
-      <Container>
-        <Heading>Und jetzt?</Heading>
-        <Paragraph>Aiiiiight</Paragraph>
-      </Container>
+      <Block />
       <div><img src={reactHexagon} width="50" height="50" /></div>
     </React.Fragment>
   );
