@@ -57,6 +57,11 @@ module.exports = [
         template: './src/index.html',
         filename: './index.html'
       })
-    ]
+    ],
+    serve: {
+      dev: {writeToDisk: false},
+      hot: true,
+      open: true
+    }
   }
 ];

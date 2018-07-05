@@ -15,7 +15,7 @@ const Container = styled.div`
     font-size: 24px;
   }
   ${Paragraph} {
-    color: blue;
+    color: green;
   }
 `;
 
