@@ -4,6 +4,12 @@ import styled from '../../../../../lib/styler';
 const Button = styled.button`
   background-color: #333;
   color: #f0f0f0;
+  padding: 30px;
+  font-size: 42px;
+  border: 2px solid #ccc;
+  &:hover {
+    background-color: #999;
+  }
 `;
 
 class ButtonStateful extends React.Component {
@@ -24,7 +30,7 @@ class ButtonStateful extends React.Component {
   render() {
     return (
       <Button onClick={this.handleClick}>
-        {this.state.isToggleOn ? 'ON' : 'OFF'}
+        {this.state.isToggleOn ? this.props.textOn : this.props.textOff}
       </Button>
     );
   }

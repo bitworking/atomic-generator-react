@@ -12,10 +12,12 @@
     padding: 10px;
     background-color: #eee;
     margin: 0;
+    margin-bottom: 30px;
   }
 
   .component-raw-output h4 {
     margin-bottom: 0;
+    margin-top: 30px;
   }
   </style>
 </head>
@@ -24,12 +26,7 @@
     <h3>{{COMPONENT_NAME}}</h3>
   </header>
 
-  <div data-reactcomponent="{{COMPONENT_NAME}}" data-reactdata='{{COMPONENT_DATA}}'>{{COMPONENT}}</div>
-
-  <div class="component-raw-output">
-    <h4>Code:</h4>
-    <xmp><div data-reactcomponent="{{COMPONENT_NAME}}" data-reactdata='{{COMPONENT_DATA}}'>{{COMPONENT}}</div></xmp>
-  </div>
+  {{COMPONENT}}
 
   <script src="../../../assets/js/main.js"></script>
 </body>

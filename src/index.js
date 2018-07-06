@@ -8,10 +8,10 @@ import ButtonSwitch from './components/atomic/atoms/ButtonSwitch/ButtonSwitch';
 import Block from './components/atomic/molecules/Block/Block';
 
 const componentRegistry = {
-  'Heading': Heading,
-  'Paragraph': Paragraph,
-  'ButtonSwitch': ButtonSwitch,
-  'Block': Block
+  'atoms-heading': Heading,
+  'atoms-paragraph': Paragraph,
+  'atoms-buttonswitch': ButtonSwitch,
+  'molecules-block': Block
 };
 
 const reactComponents = document.querySelectorAll('[data-reactcomponent]');

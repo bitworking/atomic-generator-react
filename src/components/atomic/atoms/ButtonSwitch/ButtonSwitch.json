@@ -1,0 +1,19 @@
+{
+  "$text": "Toogle Button - Das ist eine dynamische Komponente",
+  "$data": [
+    {
+      "$text": "In deutsch",
+      "$data": {
+        "textOn": "An",
+        "textOff": "Aus"
+      }
+    },
+    {
+      "$text": "In englisch",
+      "$data": {
+        "textOn": "On",
+        "textOff": "Off"
+      }
+    }
+  ]
+}
