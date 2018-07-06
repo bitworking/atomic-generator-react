@@ -2,9 +2,9 @@
   "presets": [
     "env",
     "react"
-    
   ],
   "plugins": [
+    "transform-object-rest-spread",
     ["./lib/babel-plugin-styler", {
       "cssPath": "./dist/assets/scss/main.scss"
     }]

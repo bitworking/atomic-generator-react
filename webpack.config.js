@@ -9,7 +9,7 @@ module.exports = [
     entry: './src/index.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'main.js'
+      filename: 'assets/js/main.js'
     },
     module: {
       rules: [
@@ -21,13 +21,13 @@ module.exports = [
           }
         },
         {
-          test: /\.(png|jpg|gif|svg|css)$/,
+          test: /\.(png|jpg|gif|svg)$/,
           use: [
             {
               loader: 'file-loader',
               options: {
                 emitFile: true,
-                name: 'assets/[name].[ext]'
+                name: 'assets/img/[name].[ext]'
               }
             }
           ]
@@ -39,7 +39,7 @@ module.exports = [
               loader: 'file-loader',
               options: {
                 name: '[name].css',
-                outputPath: 'assets/css/'
+                outputPath: 'assets/css'
               }
             },
             {
