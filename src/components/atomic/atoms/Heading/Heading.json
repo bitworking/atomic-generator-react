@@ -1,3 +1,4 @@
 {
+  "$stateful": false,
   "children": "Das ist die Überschrift"
 }

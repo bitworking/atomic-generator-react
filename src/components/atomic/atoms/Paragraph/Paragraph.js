@@ -1,7 +1,9 @@
-import styled from '../../../../../lib/styler';
+import styled from '../../../../../lib/react-styler';
 
 export default styled.p`
-  color: red;
+  font-family: sans-serif;
+  margin: 0;
+  color: red;  
   &:hover {
     color: green;
   }

@@ -1,4 +1,5 @@
 {
+  "$stateful": false,
   "heading": "Das ist die Überschrift",
-  "paragraph": "Das ist der Paragraph"
+  "paragraphs": ["Das ist der 1. Paragraph", "Das ist der 2. Paragraph"]
 }
