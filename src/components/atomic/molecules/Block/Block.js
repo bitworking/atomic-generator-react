@@ -3,23 +3,22 @@ import styled from '../../../../../lib/styler';
 import Heading from '../../atoms/Heading/Heading';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 
-const BlockStyled = styled.div`
+const Block = styled.div`
   background: #eee;
   font-size: 16px;
   ${Heading} {
     font-size: 24px;
   }
   ${Paragraph} {
-    color: blue;
+    color: green;
   }
 `;
 
-export default () => {
+export default ({heading, paragraph}) => {
   return (   
-    <BlockStyled>
-      <Heading>Und jetzt?</Heading>
-      <Paragraph>Aiiiiight</Paragraph>
-    </BlockStyled>
+    <Block>
+      <Heading>{heading}</Heading>
+      <Paragraph>{paragraph}</Paragraph>
+    </Block>
   );
 };
-

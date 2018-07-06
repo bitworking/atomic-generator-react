@@ -11,7 +11,7 @@ const Index = () => {
     <React.Fragment>
       <Heading>Aiiight</Heading>
       <Paragraph>Was geht?</Paragraph>
-      <Block />
+      <Block heading="Über children?" paragraph="Geht doch.." />
       <div><img src={reactHexagon} width="50" height="50" /></div>
     </React.Fragment>
   );
