@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-serve",
-    "build": "webpack --mode development && node lib/renderer/render.js",
-    "build:prod": "webpack --mode production && node lib/renderer/render.js"
+    "dev": "cross-env NODE_ENV=serve webpack-serve",
+    "build": "cross-env NODE_ENV=development webpack --mode development && node lib/renderer/render.js",
+    "build:prod": "cross-env NODE_ENV=production webpack --mode production && node lib/renderer/render.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.2.0",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.9.0",
