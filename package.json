@@ -5,11 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-serve",
-    "build": "webpack --mode development",
-    "build:prod": "webpack --mode production",
-    "render": "webpack --mode development && node lib/renderer/render.js",
-    "server": "cd dist && node server",
-    "compile:index": "npx babel src/index.js --out-file dist/index.compiled.js"
+    "build": "webpack --mode development && node lib/renderer/render.js",
+    "build:prod": "webpack --mode production && node lib/renderer/render.js"
   },
   "keywords": [],
   "author": "",

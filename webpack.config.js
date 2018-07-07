@@ -43,11 +43,11 @@ module.exports = [
               }
             },
             {
-							loader: 'postcss-loader'
-						},
+              loader: 'postcss-loader'
+            },
             {
-							loader: 'sass-loader'
-						}
+              loader: 'sass-loader'
+            }
           ]
         }
       ]
