@@ -3,10 +3,13 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
 
-module.exports = [
-  {
+module.exports = env => {
+
+  const entry = process.env.NODE_ENV === 'serve' ? './src/dev.js' : './src/index.js';
+
+  return {
     mode: 'development',
-    entry: './src/index.js',
+    entry: entry,
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'assets/js/main.js'
@@ -65,4 +68,4 @@ module.exports = [
       open: true
     }
   }
-];
+};
