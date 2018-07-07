@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "env",
+    "react"
+  ],
+  "plugins": [
+    "transform-object-rest-spread",
+    ["./lib/babel-plugin-react-styler", {
+      "cssPath": "./dist/assets/scss/main.scss"
+    }]
+  ]
+}
