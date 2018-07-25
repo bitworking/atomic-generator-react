@@ -2,10 +2,20 @@ import React from 'react';
 import styled from '../../../../../lib/react-styler';
 import Heading from '../../atoms/Heading/Heading';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
+import globalVar from '../../../../../global/globalVar';
+
+const localVar = `
+  border: 1px solid black;
+`;
+
+const localVar2 = 'border-radius: 10px;';
 
 const Block = styled.div`
   background: #f0f0f0;
   padding: 10px;
+  ${localVar}
+  ${localVar2}
+  ${globalVar}
   ${Heading} {
     font-size: 24px;
     color: #999;
