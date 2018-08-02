@@ -1,6 +1,8 @@
 module.exports = {
 	plugins: {
-    'autoprefixer': {},
+    'autoprefixer': {
+      'grid': true
+    },
     'perfectionist': {
       'indentSize': 2,
       'format': 'expanded'

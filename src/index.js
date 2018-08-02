@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // import scss
-import '../dist/assets/scss/main.scss';
+// import '../dist/assets/scss/main.scss';
 
 // import components
 import Heading from './components/atomic/atoms/Heading/Heading';
