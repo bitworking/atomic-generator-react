@@ -2,15 +2,19 @@ import React from 'react';
 import styled from '../../../../../lib/react-styler';
 import Heading from '../../atoms/Heading/Heading';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
-import globalVar from '../../../../../global/globalVar';
+import globalVar from '../../../../global/globalVar';
+import '../../../../assets/react-hexagon.png';
+
+const borderWidth = 2;
 
 const localVar = `
-  border: 1px solid black;
+  border: ${borderWidth}px solid black;
 `;
 
 const localVar2 = 'border-radius: 10px;';
 
 const Block = styled.div`
+  display: grid;
   background: #f0f0f0;
   padding: 10px;
   ${localVar}

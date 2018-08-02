@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// import scss
+import '../dist/assets/scss/main.scss';
+
 // import components
 import Heading from './components/atomic/atoms/Heading/Heading';
 import Paragraph from './components/atomic/atoms/Paragraph/Paragraph';
