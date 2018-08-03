@@ -6,6 +6,7 @@ const nodeExternals = require('webpack-node-externals');
 module.exports = env => {
 
   const entry = process.env.NODE_ENV === 'serve' ? './src/dev.js' : './src/index.js';
+  const isServe = process.env.NODE_ENV === 'serve' ? true : false;
 
   return {
     mode: 'development',
@@ -60,7 +61,7 @@ module.exports = env => {
         root: process.cwd()
       }),
       new HtmlWebPackPlugin({
-        template: './src/index.html',
+        template: isServe ? './src/dev.html' : './src/index.html',
         filename: './index.html'
       })
     ],
