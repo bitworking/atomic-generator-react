@@ -56,6 +56,9 @@ module.exports = env => {
       ]
     },
     plugins: [
+      new CleanWebpackPlugin(['dist'], {
+        root: process.cwd()
+      }),
       new HtmlWebPackPlugin({
         template: './src/index.html',
         filename: './index.html'

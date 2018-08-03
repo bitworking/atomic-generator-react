@@ -4,9 +4,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
 
 module.exports = env => {
-
-  const entry = process.env.NODE_ENV === 'serve' ? './src/dev.js' : './src/index.js';
-
   return {
     mode: 'development',
     entry: './src/main.scss',
