@@ -6,7 +6,7 @@
   "plugins": [
     "transform-object-rest-spread",
     ["./lib/babel-plugin-react-styler", {
-      "cssPath": "./dist/assets/scss/main.scss"
+      "scssPath": "./dist/assets/scss/main.scss"
     }]
   ]
 }
