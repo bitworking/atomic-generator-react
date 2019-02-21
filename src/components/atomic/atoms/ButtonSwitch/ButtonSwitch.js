@@ -1,4 +1,5 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import styled from '../../../../../lib/react-styler';
 
 const Button = styled.button`
@@ -12,25 +13,39 @@ const Button = styled.button`
   }
 `;
 
-class ButtonStateful extends React.Component {
-  constructor(props) {
+type PropType = {
+  textOn: string,
+  textOff: string
+};
+
+type StateType = {
+  isToggleOn: boolean
+};
+
+class ButtonStateful extends React.Component<PropType, StateType> {
+  constructor(props: PropType) {
     super(props);
-    this.state = {isToggleOn: true};
+    this.state = { isToggleOn: true };
 
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
   }
 
+  handleClick: () => void;
+
   handleClick() {
-    this.setState(prevState => ({
-      isToggleOn: !prevState.isToggleOn
+    this.setState((prevState: StateType): StateType => ({
+      isToggleOn: !prevState.isToggleOn,
     }));
   }
 
-  render() {
+  render(): React.Node {
+    const { isToggleOn } = this.state;
+    const { textOn, textOff } = this.props;
+
     return (
       <Button onClick={this.handleClick}>
-        {this.state.isToggleOn ? this.props.textOn : this.props.textOff}
+        {isToggleOn ? textOn : textOff}
       </Button>
     );
   }

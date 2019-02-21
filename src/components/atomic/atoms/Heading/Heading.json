@@ -1,4 +1,5 @@
 {
-  "$stateful": false,
-  "children": "Das ist die Überschrift"
+  "$stateful": false,  
+  "children": "Das ist die Überschrift",
+  "tag": "h1"
 }
