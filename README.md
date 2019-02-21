@@ -4,17 +4,17 @@ Renders react components as static html markup. One css file is generated which 
 
 First:
 
-    npm install    
+    yarn install    
 Serves the playground (components/playground/playground):
 
-    npm run dev
+    yarn dev
 Builds a static pattern library under dist/atomic (The css file is under dist/assets/css):
 
-    npm run build
+    yarn build
 
 Production build:
 
-    npm run build:prod
+    yarn build:prod
 
 ### Motivation
 
