@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import styled from '../../../../../lib/react-styler';
-import Heading from '../../atoms/Heading/Heading';
+import Heading, { H1 } from '../../atoms/Heading/Heading';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import globalVar from '../../../../global/globalVar';
 import '../../../../assets/react-hexagon.png';
@@ -21,7 +21,7 @@ const Block = styled.div`
   ${localVar}
   ${localVar2}
   ${globalVar}
-  ${Heading} {
+  ${H1} {
     font-size: 24px;
     color: #999;
     margin-bottom: 15px;
@@ -42,7 +42,7 @@ type PropType = {
 
 export default ({ heading, paragraphs }: PropType): React.Node => (
   <Block>
-    <Heading>
+    <Heading tag="h1">
       {heading}
     </Heading>
     {paragraphs.map((paragraph: string, i: number): React.Node => {
