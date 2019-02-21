@@ -14,7 +14,7 @@ const componentRegistry = {
   'atoms-heading': Heading,
   'atoms-paragraph': Paragraph,
   'atoms-buttonswitch': ButtonSwitch,
-  'molecules-block': Block
+  'molecules-block': Block,
 };
 
 const reactComponents = document.querySelectorAll('[data-reactcomponent]');
