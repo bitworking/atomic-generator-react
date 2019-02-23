@@ -3,8 +3,9 @@
   "config": [
     {
       "props": {
-        "children": "Das ist der Paragraph"
+        "children": "Das ist die Überschrift",
+        "tag": "h1"
       }
     }
-  ]  
+  ]
 }

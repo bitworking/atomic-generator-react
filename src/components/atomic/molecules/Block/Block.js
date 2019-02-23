@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import styled from '../../../../../lib/react-styler';
-import Heading, { H1 } from '../../atoms/Heading/Heading';
+import Headline, { H1 } from '../../atoms/Headline/Headline';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import globalVar from '../../../../global/globalVar';
 import '../../../../assets/react-hexagon.png';
@@ -36,15 +36,15 @@ const Block = styled.div`
 `;
 
 type PropType = {
-  heading: string,
+  headline: string,
   paragraphs: string[]
 };
 
-export default ({ heading, paragraphs }: PropType): React.Node => (
+export default ({ headline, paragraphs }: PropType): React.Node => (
   <Block>
-    <Heading tag="h1">
-      {heading}
-    </Heading>
+    <Headline tag="h1">
+      {headline}
+    </Headline>
     {paragraphs.map((paragraph: string, i: number): React.Node => {
       const className = (i >= paragraphs.length - 1) ? 'last' : false;
       return (

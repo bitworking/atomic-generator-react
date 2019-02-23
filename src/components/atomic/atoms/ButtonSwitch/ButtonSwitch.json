@@ -1,24 +1,25 @@
 {
-  "$text": "Toogle Button - Das ist eine dynamische Komponente",
-  "$data": [
+  "text": "Toogle Button - Das ist eine dynamische Komponente",
+  "config": [
     {
-      "$text": "In deutsch",
-      "$data": {
+      "stateful": true,
+      "text": "In deutsch",
+      "props": {
         "textOn": "An",
         "textOff": "Aus"
       }
     },
     {
-      "$text": "In englisch",
-      "$data": {
+      "stateful": true,
+      "text": "In englisch",
+      "props": {
         "textOn": "On",
         "textOff": "Off"
       }
     },
     {
-      "$stateful": false,
-      "$text": "Stateless",
-      "$data": {
+      "text": "Stateless",
+      "props": {
         "textOn": "Klick mich",
         "textOff": "Off"
       }

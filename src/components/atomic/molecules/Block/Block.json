@@ -1,5 +1,11 @@
 {
-  "$stateful": false,
-  "heading": "Das ist die Überschrift",
-  "paragraphs": ["Das ist der 1. Paragraph", "Das ist der 2. Paragraph"]
+  "text": "",
+  "config": [
+    {
+      "props": {
+        "headline": "Das ist die Überschrift",
+        "paragraphs": ["Das ist der 1. Paragraph", "Das ist der 2. Paragraph"]
+      }
+    }
+  ]  
 }

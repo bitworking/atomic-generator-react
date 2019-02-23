@@ -1,13 +1,17 @@
-import Heading from './components/atomic/atoms/Heading/Heading';
-import Paragraph from './components/atomic/atoms/Paragraph/Paragraph';
-import ButtonSwitch from './components/atomic/atoms/ButtonSwitch/ButtonSwitch';
-import Block from './components/atomic/molecules/Block/Block';
+/* eslint-disable */
 
-// Only dynamic components need to be defined
+// All components need to be imported
+
+import Headline from './components/atomic/atoms/Headline/Headline';
+import Paragraph from './components/atomic/atoms/Paragraph/Paragraph';
+import Block from './components/atomic/molecules/Block/Block';
+import ButtonSwitch from './components/atomic/atoms/ButtonSwitch/ButtonSwitch';
+
+// Only stateful components need to be defined
 
 export default {
-  // 'atoms-heading-h1': Heading,
-  // 'atoms-paragraph': Paragraph,  
+  // 'atoms-headline-h1': Headline,
+  // 'atoms-paragraph': Paragraph,
   // 'molecules-block': Block,
   'atoms-buttonswitch': ButtonSwitch,
 };
