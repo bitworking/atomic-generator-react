@@ -2,7 +2,7 @@
 
 // All components need to be imported
 
-import { body } from './global/globalStyles';
+import globalStyles from './global/globalStyles';
 import Headline from './components/atomic/atoms/Headline/Headline';
 import Paragraph from './components/atomic/atoms/Paragraph/Paragraph';
 import Block from './components/atomic/molecules/Block/Block';
