@@ -52,6 +52,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "react-styler": "file:./lib/react-styler"
   }
 }

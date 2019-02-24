@@ -1,11 +1,11 @@
 module.exports = {
-	plugins: {
-    'autoprefixer': {
-      'grid': true
+  plugins: {
+    autoprefixer: {
+      grid: true,
     },
-    'perfectionist': {
-      'indentSize': 2,
-      'format': 'expanded'
-    }
-	}
-}
+    perfectionist: {
+      indentSize: 2,
+      format: 'expanded',
+    },
+  },
+};

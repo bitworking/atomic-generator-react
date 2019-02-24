@@ -1,5 +1,5 @@
 {
-  "name": "styler",
+  "name": "react-styler",
   "version": "1.0.0",
   "description": "HOC that creates class names and extracts CSS into a static file",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "author": "Jan Fischer <info@bitworking.de> (http://www.bitworking.de)",
   "license": "ISC",
-  "dependencies": {
-    "react": "^16.8.3"
+  "peerDependencies": {
+    "react": "^16.0.0"
   }
 }
