@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled from '../../../../../lib/react-styler';
+import styled from 'react-styler';
 import Headline, { H1 } from '../../atoms/Headline/Headline';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import globalVar from '../../../../global/globalVar';

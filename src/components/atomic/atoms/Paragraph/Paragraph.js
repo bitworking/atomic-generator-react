@@ -1,4 +1,4 @@
-import styled from '../../../../../lib/react-styler';
+import styled from 'react-styler';
 
 export default styled.p`
   font-family: sans-serif;

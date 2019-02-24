@@ -6,6 +6,36 @@
         "children": "Das ist die Überschrift",
         "tag": "h1"
       }
+    },
+    {
+      "props": {
+        "children": "Das ist die Überschrift",
+        "tag": "h2"
+      }
+    },
+    {
+      "props": {
+        "children": "Das ist die Überschrift",
+        "tag": "h3"
+      }
+    },
+    {
+      "props": {
+        "children": "Das ist die Überschrift",
+        "tag": "h4"
+      }
+    },
+    {
+      "props": {
+        "children": "Das ist die Überschrift",
+        "tag": "h5"
+      }
+    },
+    {
+      "props": {
+        "children": "Das ist die Überschrift",
+        "tag": "h6"
+      }
     }
   ]
 }

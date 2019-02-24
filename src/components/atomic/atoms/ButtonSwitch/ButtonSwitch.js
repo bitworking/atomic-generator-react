@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled from '../../../../../lib/react-styler';
+import styled from 'react-styler';
 
 const Button = styled.button`
   background-color: #ddd;
