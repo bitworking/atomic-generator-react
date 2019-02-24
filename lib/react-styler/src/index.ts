@@ -1,12 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 
-const func = (tag, className) => (props) => {
+const func = (tag: string, className: string) => (props) => {
   const { className: propsClassName = null } = props;
   const classes = propsClassName ? `${className} ${propsClassName}` : className;
-  return React.createElement(tag, Object.assign({}, props, { className: classes }));
+  return React.createElement(tag, { ...props, className: classes });
 };
 
-// eslint-disable-next-line
 const styled = tag => className => randomHash => func(tag, className);
 
 export default styled;
