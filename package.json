@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=serve webpack-serve",
-    "build": "cross-env NODE_ENV=development webpack --mode development && node lib/renderer/render.js",
-    "build:prod": "cross-env NODE_ENV=production webpack --mode production && node lib/renderer/render.js",
+    "build": "cross-env NODE_ENV=development webpack --mode development && node lib/renderer/index.js",
+    "build:prod": "cross-env NODE_ENV=production webpack --mode production && node lib/renderer/index.js",
     "flow": "flow",
     "lint": "eslint src/**",
     "test": "jest",
