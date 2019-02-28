@@ -1,24 +1,26 @@
 {
-  "text": "Toogle Button - Das ist eine dynamische Komponente",
-  "config": [
+  "path": "atoms/ButtonSwitch",
+  "component": "ButtonSwitch.js",
+  "name": "atoms-buttonswitch",
+  "configs": [
     {
+      "label": "In deutsch",
       "stateful": true,
-      "text": "In deutsch",
       "props": {
         "textOn": "An",
         "textOff": "Aus"
       }
     },
     {
+      "label": "In englisch",
       "stateful": true,
-      "text": "In englisch",
       "props": {
         "textOn": "On",
         "textOff": "Off"
       }
     },
     {
-      "text": "Stateless",
+      "label": "Stateless",
       "props": {
         "textOn": "Klick mich",
         "textOff": "Off"

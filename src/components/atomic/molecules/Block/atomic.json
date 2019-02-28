@@ -1,7 +1,10 @@
 {
-  "text": "",
-  "config": [
+  "path": "molecules/Block",
+  "component": "Block.js",
+  "name": "molecules-block",
+  "configs": [
     {
+      "label": "default",
       "props": {
         "headline": "Das ist die Überschrift",
         "paragraphs": ["Das ist der 1. Paragraph", "Das ist der 2. Paragraph"]
