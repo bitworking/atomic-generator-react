@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=serve webpack-serve",
-    "build": "cross-env NODE_ENV=development webpack --mode development && node lib/renderer/render.js",
-    "build:prod": "cross-env NODE_ENV=production webpack --mode production && node lib/renderer/render.js",
+    "build:atomic": "atomicRenderer --entry ./src/components/atomic --output ./dist/atomic --template ./src/templates/main.js",
+    "build:react:dev": "cross-env NODE_ENV=development webpack --mode development",
+    "build:react:prod": "cross-env NODE_ENV=production webpack --mode production",
+    "build": "yarn build:react:dev && yarn build:atomic",
+    "build:prod": "yarn build:react:prod && yarn build:atomic",
     "flow": "flow",
     "lint": "eslint src/**",
     "test": "jest",
@@ -30,7 +33,6 @@
     "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^5.2.0",
     "del-cli": "^1.1.0",
-    "diffable-html": "^4.0.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-flowtype": "^2.50.0",
@@ -52,8 +54,10 @@
   },
   "dependencies": {
     "express": "^4.16.3",
+    "pretty": "^2.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-styler": "./lib/react-styler"
+    "react-styler": "./lib/react-styler",
+    "atomic-renderer": "./lib/atomic-renderer"
   }
 }

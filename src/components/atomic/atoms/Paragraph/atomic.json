@@ -1,0 +1,13 @@
+{
+  "path": "atoms/Paragraph",
+  "component": "Paragraph.js",
+  "name": "atoms-paragraph",
+  "configs": [
+    {
+      "label": "default",
+      "props": {
+        "children": "Das ist der Paragraph"
+      }
+    }
+  ]  
+}

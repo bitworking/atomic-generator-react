@@ -1,37 +1,45 @@
 {
-  "text": "",
-  "config": [
+  "path": "atoms/Headline",
+  "component": "Headline.js",
+  "name": "atoms-headline",
+  "configs": [
     {
+      "label": "h1",
       "props": {
         "children": "Das ist die Überschrift",
         "tag": "h1"
       }
     },
     {
+      "label": "h2",
       "props": {
         "children": "Das ist die Überschrift",
         "tag": "h2"
       }
     },
     {
+      "label": "h3",
       "props": {
         "children": "Das ist die Überschrift",
         "tag": "h3"
       }
     },
     {
+      "label": "h4",
       "props": {
         "children": "Das ist die Überschrift",
         "tag": "h4"
       }
     },
     {
+      "label": "h5",
       "props": {
         "children": "Das ist die Überschrift",
         "tag": "h5"
       }
     },
     {
+      "label": "h6",
       "props": {
         "children": "Das ist die Überschrift",
         "tag": "h6"
