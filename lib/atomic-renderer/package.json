@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Renders a static pattern library",
   "bin": {
-    "atomicRenderer": "./index.js"
+    "atomic-renderer": "./index.js"
   },
   "author": "Jan Fischer <info@bitworking.de> (http://www.bitworking.de)",
   "license": "ISC",

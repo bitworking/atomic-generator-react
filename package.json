@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=serve webpack-serve",
-    "build:atomic": "atomicRenderer --entry ./src/components/atomic --output ./dist/atomic --template ./src/templates/main.js",
+    "build:atomic": "atomic-renderer --entry ./src/components/atomic --output ./dist/atomic --template ./src/templates/main.js",
     "build:react:dev": "cross-env NODE_ENV=development webpack --mode development",
     "build:react:prod": "cross-env NODE_ENV=production webpack --mode production",
     "build": "yarn build:react:dev && yarn build:atomic",
