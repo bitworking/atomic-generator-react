@@ -1,8 +1,16 @@
-/* eslint-disable */
+// @flow
 import styled from 'react-styler';
+import normalizeCss from './normalizeCss';
+
 
 export default styled.global`
-  body {
-    margin: 0;
+  ${normalizeCss}
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
   }
 `;
