@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = ({ env }) => ({
   plugins: {
     autoprefixer: {
       grid: true,
@@ -7,5 +7,6 @@ module.exports = {
       indentSize: 2,
       format: 'expanded',
     },
+    cssnano: env === 'production' ? { preset: 'default' } : false,
   },
-};
+});
