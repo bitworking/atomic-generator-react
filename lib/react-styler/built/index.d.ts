@@ -1,2 +1,2 @@
-declare const styled: (tag: any) => (className: any) => (randomHash: any) => (props: any) => any;
+declare const styled: (tag: any) => (className: any) => (randomHash: any) => any;
 export default styled;
