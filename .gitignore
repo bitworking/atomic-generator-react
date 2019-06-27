@@ -66,3 +66,4 @@ typings/
 
 # output
 dist
+!lib/atomic-renderer/dist/
