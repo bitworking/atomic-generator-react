@@ -5,6 +5,8 @@ import Headline, { H1 } from '../../atoms/Headline/Headline';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import globalVar from '../../../../global/globalVar';
 import '../../../../assets/react-hexagon.png';
+import ButtonSwitch from '../../atoms/ButtonSwitch/ButtonSwitch';
+import Stateful from '../../../utils/Stateful';
 
 const borderWidth = 2;
 
@@ -40,6 +42,11 @@ type PropType = {
   paragraphs: string[]
 };
 
+const buttonSwitchProps = {
+  textOn: 'An',
+  textOff: 'Aus'
+};
+
 export default ({ headline, paragraphs }: PropType): React.Node => (
   <Block>
     <Headline tag="h1">
@@ -53,5 +60,8 @@ export default ({ headline, paragraphs }: PropType): React.Node => (
         </Paragraph>
       );
     })}
+    <Stateful name="atoms-buttonswitch" props={buttonSwitchProps}>
+      <ButtonSwitch {...buttonSwitchProps} />
+    </Stateful>
   </Block>
 );
