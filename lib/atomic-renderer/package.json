@@ -8,6 +8,6 @@
   "author": "Jan Fischer <info@bitworking.de> (http://www.bitworking.de)",
   "license": "ISC",
   "dependencies": {
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.3"
   }
 }
