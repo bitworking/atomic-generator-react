@@ -55,7 +55,7 @@
   },
   "dependencies": {
     "atomic-renderer": "./lib/atomic-renderer",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "pretty": "^2.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
